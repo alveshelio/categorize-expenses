@@ -1,0 +1,1 @@
+export { postHandlers } from './postHandlers';

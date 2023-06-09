@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".solid/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "e2e": {
+      "cache": false
+    },
+    "e2e:run": {
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "cache": false
+    }
+  }
+}

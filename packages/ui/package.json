@@ -1,0 +1,37 @@
+{
+  "name": "ui",
+  "version": "0.0.1",
+  "description": "UI for the app",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@zag-js/core": "^0.10.2",
+    "@zag-js/solid": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint-config-base": "workspace:*",
+    "postcss": "^8.4.24",
+    "solid-js": "^1.7.6",
+    "tailwindcss": "^3.3.2",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.7.0",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.7.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@rollup/plugin-node-resolve": "13.3.0"
+    }
+  }
+}

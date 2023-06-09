@@ -1,0 +1,5 @@
+{
+  "extends": "tsconfig/ui-library.json",
+  "include": ["./src", ".eslintrc.cjs", "./"],
+  "exclude": ["dist", "build", "node_modules"]
+}

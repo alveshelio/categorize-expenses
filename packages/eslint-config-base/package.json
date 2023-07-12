@@ -11,7 +11,7 @@
     "eslint-config-turbo": "latest",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-solid": "^0.12.1",
     "prettier": "^2.8.8",
     "typescript": "^5.1.3"
